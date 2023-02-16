@@ -1,6 +1,6 @@
 {
-  "id": "lib.evelyn.Necrom",
-  "name": "Necrom",
+  "id": "lib.evelyn.Matter",
+  "name": "Matter",
   "description": "A modularized theme for Replugged, because being whole is overrated",
   "author": {
     "name": "Evelyn",
@@ -10,7 +10,7 @@
   "version": "0.0.2",
   "updater": {
     "type": "github",
-    "id": "Socketlike/Necrom"
+    "id": "Socketlike/Matter"
   },
   "license": "MIT",
   "type": "replugged-theme",
