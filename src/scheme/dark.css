@@ -1,0 +1,27 @@
+.theme-custom.theme-dark,
+.theme-dark {
+  --background-mentioned: hsl(var(--brand-600-hsl) / 0.2);
+  --background-modifier-accent: hsl(
+    var(--necrom-brand-hue, 84),
+    calc(var(--saturation-factor, 1) * 10%),
+    52%,
+    0.2
+  );
+  --background-modifier-hover: hsl(
+    var(--necrom-brand-hue, 84),
+    calc(var(--saturation-factor, 1) * 24%),
+    54%,
+    0.3
+  );
+  --background-modifier-selected: hsl(
+    var(--necrom-brand-hue, 84),
+    calc(var(--saturation-factor, 1) * 36%),
+    64%,
+    0.35
+  );
+  --primary-dark-600: hsl(219, calc(var(--saturation-factor, 1) * 19%), 23%);
+  --primary-dark-630: hsl(223, calc(var(--saturation-factor, 1) * 22%), 20%);
+  --primary-dark-660: hsl(220, calc(var(--saturation-factor, 1) * 23%), 16%);
+  --primary-dark-700: hsl(216, calc(var(--saturation-factor, 1) * 25%), 16%);
+  --primary-dark-800: hsl(219, calc(var(--saturation-factor, 1) * 37%), 10%);
+}

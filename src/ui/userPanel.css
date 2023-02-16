@@ -1,0 +1,129 @@
+/* --- Convert panel to row --- */
+section[class^='panels-'] [class^='container-'] {
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Popout button */
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 4px;
+  margin: 8px;
+  height: 50px;
+  background-color: var(--background-primary);
+  border-radius: 8px;
+}
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-']:hover {
+  background-color: var(--background-modifier-selected);
+}
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'] {
+  width: 40px !important;
+  height: 40px !important;
+}
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'] svg {
+  margin-left: 2px;
+}
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class*='avatar-']
+  svg
+  foreignObject {
+  mask: url(#svg-mask-avatar-status-round-40);
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+}
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class*='avatar-']
+  svg
+  svg[viewBox] {
+  display: none;
+}
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class*='avatar-']
+  svg
+  rect,
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class*='avatar-']
+  svg
+  foreignObject
+  rect {
+  x: 28;
+  y: 28;
+}
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class*='avatar-'][aria-label*='Online']
+  rect {
+  fill: var(--status-positive);
+  mask: url(#svg-mask-status-online);
+}
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class*='avatar-'][aria-label*='Idle']
+  rect {
+  fill: var(--status-warning);
+  mask: url(#svg-mask-status-idle);
+}
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class*='avatar-'][aria-label*='Disturb']
+  rect {
+  fill: var(--status-danger);
+  mask: url(#svg-mask-status-dnd);
+}
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class*='avatar-'][aria-label*='Invisible']
+  rect {
+  fill: #747f8d;
+  mask: url(#svg-mask-status-offline);
+}
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class^='nameTag-'] {
+  margin-left: 2px;
+}
+section[class^='panels-']
+  [class^='container-']
+  [class^='avatarWrapper-']
+  [class^='nameTag-']
+  [class*='usernameContainer-'] {
+  font-size: 16px;
+}
+
+/* Other buttons */
+section[class^='panels-'] [class^='container-'] [class^='flex-'] {
+  width: 100%;
+  margin-bottom: 8px;
+}
+section[class^='panels-'] [class^='container-'] [class^='flex-'] button {
+  flex-grow: 1;
+  border-radius: 8px;
+  margin: 0 4px;
+  background-color: var(--background-primary);
+}
+section[class^='panels-'] [class^='container-'] [class^='flex-'] button:first-child {
+  flex-grow: 1;
+  border-radius: 8px;
+  margin-right: 4px;
+  background-color: var(--background-primary);
+}
+section[class^='panels-'] [class^='container-'] [class^='flex-'] button:last-child {
+  flex-grow: 1;
+  border-radius: 8px;
+  margin-left: 4px;
+  background-color: var(--background-primary);
+}
+
+/* !-- Convert panel to row --! */

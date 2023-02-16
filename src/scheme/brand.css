@@ -1,0 +1,62 @@
+.theme-dark,
+.theme-light,
+.theme-custom {
+  --necrom-brand-hue: 84;
+  --brand-experiment-dark: hsl(
+    var(--necrom-brand-hue, 84),
+    calc(var(--saturation-factor, 1) * 36%),
+    55%
+  );
+  --brand-new-100: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 38%), 98%);
+  --brand-new-130: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 48%), 97%);
+  --brand-new-160: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 45%), 95%);
+  --brand-new-200: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 43%), 93%);
+  --brand-new-230: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 47%), 91%);
+  --brand-new-260: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 46%), 89%);
+  --brand-new-300: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 46%), 86%);
+  --brand-new-330: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 45%), 82%);
+  --brand-new-345: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 45%), 79%);
+  --brand-new-360: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 46%), 76%);
+  --brand-new-400: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 46%), 72%);
+  --brand-new-430: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 46%), 70%);
+  --brand-new-460: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 46%), 68%);
+  --brand-new-500: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 46%), 65%);
+  --brand-new-530: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 27%), 59%);
+  --brand-new-560: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 11%), 52%);
+  --brand-new-600: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 7%), 44%);
+  --brand-new-630: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 7%), 38%);
+  --brand-new-660: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 7%), 33%);
+  --brand-new-700: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 7%), 26%);
+  --brand-new-730: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 7%), 24%);
+  --brand-new-760: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 7%), 22%);
+  --brand-new-800: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 8%), 19%);
+  --brand-new-830: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 7%), 15%);
+  --brand-new-860: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 7%), 10%);
+  --brand-new-900: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 10%), 3%);
+  --brand-100-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 38%) 98%;
+  --brand-130-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 48%) 97%;
+  --brand-160-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 45%) 95%;
+  --brand-200-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 43%) 93%;
+  --brand-230-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 47%) 91%;
+  --brand-260-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 46%) 89%;
+  --brand-300-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 46%) 86%;
+  --brand-330-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 45%) 82%;
+  --brand-345-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 45%) 79%;
+  --brand-360-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 46%) 76%;
+  --brand-400-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 46%) 72%;
+  --brand-430-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 46%) 70%;
+  --brand-460-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 46%) 68%;
+  --brand-500-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 46%) 65%;
+  --brand-530-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 27%) 59%;
+  --brand-560-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 11%) 52%;
+  --brand-600-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 7%) 44%;
+  --brand-630-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 7%) 38%;
+  --brand-660-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 7%) 33%;
+  --brand-700-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 7%) 26%;
+  --brand-730-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 7%) 24%;
+  --brand-760-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 7%) 22%;
+  --brand-800-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 8%) 19%;
+  --brand-830-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 7%) 15%;
+  --brand-860-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 7%) 10%;
+  --brand-900-hsl: var(--necrom-brand-hue, 84) calc(var(--saturation-factor, 1) * 10%) 3%;
+}

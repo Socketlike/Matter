@@ -1,0 +1,22 @@
+/* --- Override Discord's avatar masks --- */
+mask[id^='svg-mask-avatar-status-round-'] circle:first-child,
+mask[id^='svg-mask-avatar-round-'] circle:first-child,
+mask[id='svg-mask-avatar-default'] circle {
+  r: 1;
+}
+
+header [class^='header-'] div [class^='wrapper-'] svg > mask circle[fill='white'],
+[class^='layout-'] [class^='avatar-'] [class^='wrapper-'] svg > mask circle[fill='white'],
+[class^='avatarHoverTarget-'] [class^='wrapper-'] svg mask circle:first-child {
+  r: 100;
+}
+
+[class^='layout-'] [class^='avatar-'] [class^='wrapper-'],
+img[class^='avatar-'][class*='clickable-'],
+foreignObject[mask^='url(#svg-mask-avatar-status-round-'],
+foreignObject[mask^='url(#svg-mask-avatar-status-round-'] [class^='avatarHintInner-'],
+[class^='layout-'] [class^='avatar-'] [class^='wrapper-'] svg foreignObject,
+[class^='avatarHoverTarget-'] [class^='wrapper-'] svg foreignObject {
+  border-radius: 20%;
+}
+/* !-- Override Discord's avatar masks --! */

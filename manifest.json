@@ -1,0 +1,18 @@
+{
+  "id": "lib.evelyn.Necrom",
+  "name": "Necrom",
+  "description": "A modularized theme for Replugged, because being whole is overrated",
+  "author": {
+    "name": "Evelyn",
+    "discordID": "1065607800392261732",
+    "github": "Socketlike"
+  },
+  "version": "0.0.2",
+  "updater": {
+    "type": "github",
+    "id": "Socketlike/Necrom"
+  },
+  "license": "MIT",
+  "type": "replugged-theme",
+  "main": "src/style.css"
+}

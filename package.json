@@ -1,0 +1,27 @@
+{
+  "name": "Necrom",
+  "version": "0.0.2",
+  "description": "A modularized theme for Replugged, because being whole is overrated",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "build:dev": "replugged build theme",
+    "build:dev:bundle": "replugged bundle theme",
+    "build:prod": "replugged build theme --production",
+    "build:prod:bundle": "replugged bundle theme --production",
+    "lint": "prettier ./src ./scripts --check",
+    "lint:fix": "prettier ./src ./scripts --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/config-default": "^2.8.2",
+    "@parcel/core": "^2.8.2",
+    "@parcel/transformer-sass": "^2.8.2",
+    "@types/node": "^18.11.19",
+    "prettier": "^2.8.3",
+    "replugged": "4.0.0-beta0.27"
+  }
+}
