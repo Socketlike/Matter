@@ -2,7 +2,7 @@
 @import 'dark.css';
 @import 'light.css';
 
-  /*
+/*
     --primary-light-100: hsl(180, calc(var(--saturation-factor, 1) * 7.7%), 97.5%);
     --primary-light-130: hsl(220, calc(var(--saturation-factor, 1) * 13%), 95.5%);
     --primary-light-160: hsl(210, calc(var(--saturation-factor, 1) * 11.1%), 92.9%);
