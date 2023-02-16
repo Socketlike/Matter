@@ -1,6 +1,19 @@
 /**
  * Import this module with:
  * @import url('https://socketlike.github.io/Matter/src/scheme/webModule.css');
+ *
+ * --- OR ---
+ *
+ * Import individual "atoms":
+ *
+ * Brand colors:
+ * @import url('https://socketlike.github.io/Matter/src/scheme/brand.css');
+ *
+ * Dark theme related colors:
+ * @import url('https://socketlike.github.io/Matter/src/scheme/dark.css');
+ *
+ * Light theme related colors:
+ * @import url('https://socketlike.github.io/Matter/src/scheme/light.css');
  */
 
 @import url('https://socketlike.github.io/Matter/src/scheme/brand.css');

@@ -1,27 +1,63 @@
 .theme-custom.theme-dark,
 .theme-dark {
   --background-mentioned: hsl(var(--brand-600-hsl) / 0.2);
-  --background-modifier-accent: hsl(
-    var(--necrom-brand-hue, 84),
-    calc(var(--saturation-factor, 1) * 10%),
-    52%,
-    0.2
-  );
-  --background-modifier-hover: hsl(
-    var(--necrom-brand-hue, 84),
-    calc(var(--saturation-factor, 1) * 24%),
-    54%,
-    0.3
-  );
-  --background-modifier-selected: hsl(
-    var(--necrom-brand-hue, 84),
-    calc(var(--saturation-factor, 1) * 36%),
-    64%,
-    0.35
-  );
-  --primary-dark-600: hsl(219, calc(var(--saturation-factor, 1) * 19%), 23%);
-  --primary-dark-630: hsl(223, calc(var(--saturation-factor, 1) * 22%), 20%);
-  --primary-dark-660: hsl(220, calc(var(--saturation-factor, 1) * 23%), 16%);
-  --primary-dark-700: hsl(216, calc(var(--saturation-factor, 1) * 25%), 16%);
-  --primary-dark-800: hsl(219, calc(var(--saturation-factor, 1) * 37%), 10%);
+  --background-modifier-accent: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 10%), 52%, 0.2);
+  --background-modifier-hover: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 24%), 54%, 0.3);
+  --background-modifier-selected: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 36%), 64%, 0.35);
+  --primary-dark-100: hsl(220, calc(var(--saturation-factor, 1) * 50%), 21%);
+  --primary-dark-130: hsl(220, calc(var(--saturation-factor, 1) * 40%), 20%);
+  --primary-dark-160: hsl(220, calc(var(--saturation-factor, 1) * 30%), 19%);
+  --primary-dark-200: hsl(220, calc(var(--saturation-factor, 1) * 80%), 85%); /* Chat text color & some misc */
+  --primary-dark-230: hsl(220, calc(var(--saturation-factor, 1) * 26%), 17%);
+  --primary-dark-260: hsl(220, calc(var(--saturation-factor, 1) * 30%), 17%);
+  --primary-dark-300: hsl(220, calc(var(--saturation-factor, 1) * 50%), 70%); /* Buttons color */
+  --primary-dark-330: hsl(220, calc(var(--saturation-factor, 1) * 28%), 50%); /* Timestamp */
+  --primary-dark-345: hsl(220, calc(var(--saturation-factor, 1) * 25%), 58%); /* Channel text color */
+  --primary-dark-360: hsl(220, calc(var(--saturation-factor, 1) * 55%), 75%); /* Channel icon color */
+  --primary-dark-400: hsl(220, calc(var(--saturation-factor, 1) * 31%), 15%);
+  --primary-dark-430: hsl(220, calc(var(--saturation-factor, 1) * 35%), 15%);
+  --primary-dark-460: hsl(220, calc(var(--saturation-factor, 1) * 27%), 14%);
+  --primary-dark-500: hsl(220, calc(var(--saturation-factor, 1) * 32%), 14%);
+  --primary-dark-530: hsl(220, calc(var(--saturation-factor, 1) * 36%), 14%);
+  --primary-dark-560: hsl(220, calc(var(--saturation-factor, 1) * 28%), 13%);
+  --primary-dark-600: hsl(220, calc(var(--saturation-factor, 1) * 40%), 16%); /* Secondary */
+  --primary-dark-630: hsl(220, calc(var(--saturation-factor, 1) * 38%), 13.8%); /* ^ Alt */
+  --primary-dark-660: hsl(220, calc(var(--saturation-factor, 1) * 36%), 13%);
+  --primary-dark-700: hsl(220, calc(var(--saturation-factor, 1) * 36%), 12%); /* Tertiary */
+  --primary-dark-730: hsl(220, calc(var(--saturation-factor, 1) * 36%), 12%);
+  --primary-dark-760: hsl(220, calc(var(--saturation-factor, 1) * 32%), 11%);
+  --primary-dark-800: hsl(220, calc(var(--saturation-factor, 1) * 35%), 11%);
+  --primary-dark-830: hsl(220, calc(var(--saturation-factor, 1) * 38%), 10%);
+  --primary-dark-860: hsl(220, calc(var(--saturation-factor, 1) * 41%), 10%);
+  --primary-dark-900: hsl(220, calc(var(--saturation-factor, 1) * 48%), 10%);
+  --primary-dark-100-hsl: 220 calc(var(--saturation-factor, 1) * 50%) 21%;
+  --primary-dark-130-hsl: 220 calc(var(--saturation-factor, 1) * 40%) 20%;
+  --primary-dark-160-hsl: 220 calc(var(--saturation-factor, 1) * 30%) 19%;
+  --primary-dark-200-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 85%;
+  --primary-dark-230-hsl: 220 calc(var(--saturation-factor, 1) * 26%) 17%;
+  --primary-dark-260-hsl: 220 calc(var(--saturation-factor, 1) * 30%) 17%;
+  --primary-dark-300-hsl: 220 calc(var(--saturation-factor, 1) * 50%) 70%;
+  --primary-dark-330-hsl: 220 calc(var(--saturation-factor, 1) * 28%) 50%;
+  --primary-dark-345-hsl: 220 calc(var(--saturation-factor, 1) * 25%) 58%;
+  --primary-dark-360-hsl: 220 calc(var(--saturation-factor, 1) * 55%) 75%;
+  --primary-dark-400-hsl: 220 calc(var(--saturation-factor, 1) * 31%) 15%;
+  --primary-dark-430-hsl: 220 calc(var(--saturation-factor, 1) * 35%) 15%;
+  --primary-dark-460-hsl: 220 calc(var(--saturation-factor, 1) * 27%) 14%;
+  --primary-dark-500-hsl: 220 calc(var(--saturation-factor, 1) * 32%) 14%;
+  --primary-dark-530-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 14%;
+  --primary-dark-560-hsl: 220 calc(var(--saturation-factor, 1) * 28%) 13%;
+  --primary-dark-600-hsl: 220 calc(var(--saturation-factor, 1) * 40%) 16%;
+  --primary-dark-630-hsl: 220 calc(var(--saturation-factor, 1) * 38%) 13.8%;
+  --primary-dark-660-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 13%;
+  --primary-dark-700-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 12%;
+  --primary-dark-730-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 12%;
+  --primary-dark-760-hsl: 220 calc(var(--saturation-factor, 1) * 32%) 11%;
+  --primary-dark-800-hsl: 220 calc(var(--saturation-factor, 1) * 35%) 11%;
+  --primary-dark-830-hsl: 220 calc(var(--saturation-factor, 1) * 38%) 10%;
+  --primary-dark-860-hsl: 220 calc(var(--saturation-factor, 1) * 41%) 10%;
+  --primary-dark-900-hsl: 220 calc(var(--saturation-factor, 1) * 48%) 10%;
+  --scrollbar-auto-track: var(--primary-dark-700);
+  --scrollbar-auto-thumb: var(--primary-dark-900);
+  --scrollbar-auto-scrollbar-color-track: var(--primary-dark-700);
+  --scrollbar-auto-scrollbar-color-thumb: var(--primary-dark-900);
 }

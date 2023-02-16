@@ -24,81 +24,40 @@ section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class
 section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'] svg {
   margin-left: 2px;
 }
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class*='avatar-']
-  svg
-  foreignObject {
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'] svg foreignObject {
   mask: url(#svg-mask-avatar-status-round-40);
   height: 40px;
   width: 40px;
   border-radius: 8px;
 }
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class*='avatar-']
-  svg
-  svg[viewBox] {
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'] svg svg[viewBox] {
   display: none;
 }
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class*='avatar-']
-  svg
-  rect,
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class*='avatar-']
-  svg
-  foreignObject
-  rect {
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'] svg rect,
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'] svg foreignObject rect {
   x: 28;
   y: 28;
 }
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class*='avatar-'][aria-label*='Online']
-  rect {
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'][aria-label*='Online'] rect {
   fill: var(--status-positive);
   mask: url(#svg-mask-status-online);
 }
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class*='avatar-'][aria-label*='Idle']
-  rect {
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'][aria-label*='Idle'] rect {
   fill: var(--status-warning);
   mask: url(#svg-mask-status-idle);
 }
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class*='avatar-'][aria-label*='Disturb']
-  rect {
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'][aria-label*='Disturb'] rect {
   fill: var(--status-danger);
   mask: url(#svg-mask-status-dnd);
 }
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class*='avatar-'][aria-label*='Invisible']
-  rect {
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class*='avatar-'][aria-label*='Invisible'] rect {
   fill: #747f8d;
   mask: url(#svg-mask-status-offline);
 }
 section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class^='nameTag-'] {
   margin-left: 2px;
 }
-section[class^='panels-']
-  [class^='container-']
-  [class^='avatarWrapper-']
-  [class^='nameTag-']
-  [class*='usernameContainer-'] {
+section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] [class^='nameTag-'] [class*='usernameContainer-'] {
   font-size: 16px;
 }
 

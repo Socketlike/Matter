@@ -1,8 +1,21 @@
 /**
  * Import this module with:
  * @import url('https://socketlike.github.io/Matter/src/ui/webModule.css');
+ *
+ * --- OR ---
+ *
+ * Import individual "atoms":
+ *
+ * Server list:
+ * @import url('https://socketlike.github.io/Matter/src/ui/serverList.css');
+ *
+ * User panel:
+ * @import url('https://socketlike.github.io/Matter/src/ui/userPanel.css');
+ *
+ * Users:
+ * @import url('https://socketlike.github.io/Matter/src/ui/users.css');
  */
 
+@import url('https://socketlike.github.io/Matter/src/ui/serverList.css');
 @import url('https://socketlike.github.io/Matter/src/ui/userPanel.css');
-@import url('https://socketlike.github.io/Matter/src/ui/avatars.css');
-@import url('https://socketlike.github.io/Matter/src/ui/userPopout.css');
+@import url('https://socketlike.github.io/Matter/src/ui/users.css');

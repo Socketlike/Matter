@@ -1,0 +1,64 @@
+/* --- Override Discord's server / folder masks --- */
+.theme-dark,
+.theme-light,
+.theme-custom {
+  --rounded-mask: path('M48 24C48 50 50 48 24 48-2 48 0 50 0 24 0-2-2 0 24 0 50 0 48-2 48 24Z');
+}
+
+[class^='tutorialContainer-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapperSimple-'],
+[data-list-id='guildsnav'] [class^='scroller-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapperSimple-'],
+[data-list-id='guildsnav'] [class^='scroller-'] [class^='listItem-'] :not([class]) [class^='wrapperSimple-'],
+[aria-label='Servers'] [class^='listItem-'] :not([class]) div [class^='wrapperSimple-'],
+[class^='folder-'][data-list-item-id^='guildsnav'] div {
+  border-radius: 20%;
+}
+
+[aria-label='Servers'] [class^='listItem-'] :not([class]) div [class^='wrapper-'] svg defs path,
+[aria-label='Servers'] [class^='wrapper-'] [class^='listItem-'] [data-dnd-name] [class^='wrapper-'] svg defs path,
+[data-list-id='guildsnav'] [class^='scroller-'] [class^='listItem-'] div [class^='wrapper-'] svg defs path,
+[class^='tutorialContainer-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapper-'] svg defs path {
+  d: var(--rounded-mask);
+}
+/* !-- Override Discord's server / folder masks --! */
+
+/* --- Coloring servers with no image --- */
+foreignObject [class^='wrapper-'][data-list-item-id^='guildsnav'] [class*='acronym-'] {
+  color: var(--brand-experiment);
+}
+foreignObject [class^='wrapper-'][class*='selected-'][data-list-item-id^='guildsnav'] [class*='acronym-'],
+foreignObject [class^='wrapper-'][data-list-item-id^='guildsnav'] [class*='acronym-']:hover {
+  color: var(--background-tertiary);
+  background-color: var(--brand-experiment);
+}
+/* !-- Coloring servers with no image --! */
+
+/* --- Make the unread pill less of a circular blob --- */
+[class^='listItem-'] [class^='pill-'] span {
+  border-radius: 0 2px 2px 0;
+}
+/* !-- Make the unread pill less of a circular blob --! */
+
+/* --- Recolor buttons --- */
+[class^='tutorialContainer-']
+  [class^='listItem-']
+  [class^='listItemWrapper-']
+  [class^='wrapper-']
+  svg
+  foreignObject
+  [class^='wrapper-'][class*='selected-']
+  div
+  svg,
+[class^='tutorialContainer-']
+  [class^='listItem-']
+  [class^='listItemWrapper-']
+  [class^='wrapper-']
+  svg
+  foreignObject
+  [class^='wrapper-']:hover
+  div
+  svg,
+[data-list-id='guildsnav'] [class^='listItem-'] :not([class]) [class^='wrapper'][class*='selected-'] foreignObject div div,
+[data-list-id='guildsnav'] [class^='listItem-'] :not([class]) [class^='wrapper']:hover foreignObject div div {
+  color: var(--background-tertiary);
+}
+/* !-- Recolor buttons --! */
