@@ -18,7 +18,7 @@
 
 /* Pill */
 [class*='modeUnread-'] [class^='unread-'] {
-  background-color: var(--dark-brand-experiment);
+  background-color: var(--brand-experiment);
   height: 15px;
   top: 37%;
 }

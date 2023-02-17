@@ -1,63 +1,65 @@
 .theme-custom.theme-dark,
 .theme-dark {
+  --primary-100-hsl: 220 calc(var(--saturation-factor, 1) * 100%) 85%;
+  --primary-130-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 90%; /* Header */
+  --primary-160-hsl: 220 calc(var(--saturation-factor, 1) * 30%) 19%;
+  --primary-200-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 85%; /* Chat text color & some misc */
+  --primary-230-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 82%; /* Interactive hover */
+  --primary-260-hsl: 220 calc(var(--saturation-factor, 1) * 30%) 17%;
+  --primary-300-hsl: 220 calc(var(--saturation-factor, 1) * 50%) 70%; /* Buttons color */
+  --primary-330-hsl: 220 calc(var(--saturation-factor, 1) * 68%) 74%; /* Timestamp */
+  --primary-345-hsl: 220 calc(var(--saturation-factor, 1) * 25%) 58%;
+  --primary-360-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 75%; /* Channel text color */
+  --primary-400-hsl: 220 calc(var(--saturation-factor, 1) * 44%) 68%; /* Channel icon color */
+  --primary-430-hsl: 220 calc(var(--saturation-factor, 1) * 35%) 15%;
+  --primary-460-hsl: 220 calc(var(--saturation-factor, 1) * 27%) 14%;
+  --primary-500-hsl: 220 calc(var(--saturation-factor, 1) * 58%) 33%;
+  --primary-530-hsl: 220 calc(var(--saturation-factor, 1) * 55%) 20%; /* Chat header */
+  --primary-560-hsl: 220 calc(var(--saturation-factor, 1) * 56%) 30%;
+  --primary-600-hsl: 220 calc(var(--saturation-factor, 1) * 68%) 15%; /* Primary */
+  --primary-630-hsl: 220 calc(var(--saturation-factor, 1) * 85%) 12%; /* Secondary */
+  --primary-645-hsl: 220 calc(var(--saturation-factor, 1) * 85%) 10%; /* Home channel */
+  --primary-660-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 12%; /* ^ Alt */
+  --primary-700-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 9%; /* Tertiary */
+  --primary-730-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 12%;
+  --primary-760-hsl: 220 calc(var(--saturation-factor, 1) * 32%) 11%;
+  --primary-800-hsl: 220 calc(var(--saturation-factor, 1) * 95%) 8%; /* Popups */
+  --primary-830-hsl: 220 calc(var(--saturation-factor, 1) * 38%) 10%;
+  --primary-860-hsl: 220 calc(var(--saturation-factor, 1) * 41%) 10%;
+  --primary-900-hsl: 220 calc(var(--saturation-factor, 1) * 48%) 10%;
+  --primary-100: hsl(var(--primary-100-hsl));
+  --primary-130: hsl(var(--primary-130-hsl));
+  --primary-160: hsl(var(--primary-160-hsl));
+  --primary-200: hsl(var(--primary-200-hsl));
+  --primary-230: hsl(var(--primary-230-hsl));
+  --primary-260: hsl(var(--primary-260-hsl));
+  --primary-300: hsl(var(--primary-300-hsl));
+  --primary-330: hsl(var(--primary-330-hsl));
+  --primary-345: hsl(var(--primary-345-hsl));
+  --primary-360: hsl(var(--primary-360-hsl));
+  --primary-400: hsl(var(--primary-400-hsl));
+  --primary-430: hsl(var(--primary-430-hsl));
+  --primary-460: hsl(var(--primary-460-hsl));
+  --primary-500: hsl(var(--primary-500-hsl));
+  --primary-530: hsl(var(--primary-530-hsl));
+  --primary-560: hsl(var(--primary-530-hsl));
+  --primary-600: hsl(var(--primary-600-hsl));
+  --primary-630: hsl(var(--primary-630-hsl));
+  --primary-645: hsl(var(--primary-645-hsl));
+  --primary-660: hsl(var(--primary-660-hsl));
+  --primary-700: hsl(var(--primary-700-hsl));
+  --primary-730: hsl(var(--primary-730-hsl));
+  --primary-760: hsl(var(--primary-760-hsl));
+  --primary-800: hsl(var(--primary-800-hsl));
+  --primary-830: hsl(var(--primary-830-hsl));
+  --primary-860: hsl(var(--primary-860-hsl));
+  --primary-900: hsl(var(--primary-900-hsl));
+  --scrollbar-auto-track: var(--primary-700);
+  --scrollbar-auto-thumb: var(--primary-900);
+  --scrollbar-auto-scrollbar-color-track: var(--primary-700);
+  --scrollbar-auto-scrollbar-color-thumb: var(--primary-900);
   --background-mentioned: hsl(var(--brand-600-hsl) / 0.2);
-  --background-modifier-accent: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 10%), 52%, 0.2);
-  --background-modifier-hover: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 24%), 54%, 0.3);
-  --background-modifier-selected: hsl(var(--necrom-brand-hue, 84), calc(var(--saturation-factor, 1) * 36%), 64%, 0.35);
-  --primary-dark-100: hsl(220, calc(var(--saturation-factor, 1) * 50%), 21%);
-  --primary-dark-130: hsl(220, calc(var(--saturation-factor, 1) * 40%), 20%);
-  --primary-dark-160: hsl(220, calc(var(--saturation-factor, 1) * 30%), 19%);
-  --primary-dark-200: hsl(220, calc(var(--saturation-factor, 1) * 80%), 85%); /* Chat text color & some misc */
-  --primary-dark-230: hsl(220, calc(var(--saturation-factor, 1) * 26%), 17%);
-  --primary-dark-260: hsl(220, calc(var(--saturation-factor, 1) * 30%), 17%);
-  --primary-dark-300: hsl(220, calc(var(--saturation-factor, 1) * 50%), 70%); /* Buttons color */
-  --primary-dark-330: hsl(220, calc(var(--saturation-factor, 1) * 28%), 50%); /* Timestamp */
-  --primary-dark-345: hsl(220, calc(var(--saturation-factor, 1) * 25%), 58%); /* Channel text color */
-  --primary-dark-360: hsl(220, calc(var(--saturation-factor, 1) * 55%), 75%); /* Channel icon color */
-  --primary-dark-400: hsl(220, calc(var(--saturation-factor, 1) * 31%), 15%);
-  --primary-dark-430: hsl(220, calc(var(--saturation-factor, 1) * 35%), 15%);
-  --primary-dark-460: hsl(220, calc(var(--saturation-factor, 1) * 27%), 14%);
-  --primary-dark-500: hsl(220, calc(var(--saturation-factor, 1) * 32%), 14%);
-  --primary-dark-530: hsl(220, calc(var(--saturation-factor, 1) * 36%), 14%);
-  --primary-dark-560: hsl(220, calc(var(--saturation-factor, 1) * 28%), 13%);
-  --primary-dark-600: hsl(220, calc(var(--saturation-factor, 1) * 40%), 16%); /* Secondary */
-  --primary-dark-630: hsl(220, calc(var(--saturation-factor, 1) * 38%), 13.8%); /* ^ Alt */
-  --primary-dark-660: hsl(220, calc(var(--saturation-factor, 1) * 36%), 13%);
-  --primary-dark-700: hsl(220, calc(var(--saturation-factor, 1) * 36%), 12%); /* Tertiary */
-  --primary-dark-730: hsl(220, calc(var(--saturation-factor, 1) * 36%), 12%);
-  --primary-dark-760: hsl(220, calc(var(--saturation-factor, 1) * 32%), 11%);
-  --primary-dark-800: hsl(220, calc(var(--saturation-factor, 1) * 35%), 11%);
-  --primary-dark-830: hsl(220, calc(var(--saturation-factor, 1) * 38%), 10%);
-  --primary-dark-860: hsl(220, calc(var(--saturation-factor, 1) * 41%), 10%);
-  --primary-dark-900: hsl(220, calc(var(--saturation-factor, 1) * 48%), 10%);
-  --primary-dark-100-hsl: 220 calc(var(--saturation-factor, 1) * 50%) 21%;
-  --primary-dark-130-hsl: 220 calc(var(--saturation-factor, 1) * 40%) 20%;
-  --primary-dark-160-hsl: 220 calc(var(--saturation-factor, 1) * 30%) 19%;
-  --primary-dark-200-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 85%;
-  --primary-dark-230-hsl: 220 calc(var(--saturation-factor, 1) * 26%) 17%;
-  --primary-dark-260-hsl: 220 calc(var(--saturation-factor, 1) * 30%) 17%;
-  --primary-dark-300-hsl: 220 calc(var(--saturation-factor, 1) * 50%) 70%;
-  --primary-dark-330-hsl: 220 calc(var(--saturation-factor, 1) * 28%) 50%;
-  --primary-dark-345-hsl: 220 calc(var(--saturation-factor, 1) * 25%) 58%;
-  --primary-dark-360-hsl: 220 calc(var(--saturation-factor, 1) * 55%) 75%;
-  --primary-dark-400-hsl: 220 calc(var(--saturation-factor, 1) * 31%) 15%;
-  --primary-dark-430-hsl: 220 calc(var(--saturation-factor, 1) * 35%) 15%;
-  --primary-dark-460-hsl: 220 calc(var(--saturation-factor, 1) * 27%) 14%;
-  --primary-dark-500-hsl: 220 calc(var(--saturation-factor, 1) * 32%) 14%;
-  --primary-dark-530-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 14%;
-  --primary-dark-560-hsl: 220 calc(var(--saturation-factor, 1) * 28%) 13%;
-  --primary-dark-600-hsl: 220 calc(var(--saturation-factor, 1) * 40%) 16%;
-  --primary-dark-630-hsl: 220 calc(var(--saturation-factor, 1) * 38%) 13.8%;
-  --primary-dark-660-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 13%;
-  --primary-dark-700-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 12%;
-  --primary-dark-730-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 12%;
-  --primary-dark-760-hsl: 220 calc(var(--saturation-factor, 1) * 32%) 11%;
-  --primary-dark-800-hsl: 220 calc(var(--saturation-factor, 1) * 35%) 11%;
-  --primary-dark-830-hsl: 220 calc(var(--saturation-factor, 1) * 38%) 10%;
-  --primary-dark-860-hsl: 220 calc(var(--saturation-factor, 1) * 41%) 10%;
-  --primary-dark-900-hsl: 220 calc(var(--saturation-factor, 1) * 48%) 10%;
-  --scrollbar-auto-track: var(--primary-dark-700);
-  --scrollbar-auto-thumb: var(--primary-dark-900);
-  --scrollbar-auto-scrollbar-color-track: var(--primary-dark-700);
-  --scrollbar-auto-scrollbar-color-thumb: var(--primary-dark-900);
+  --elevation-low: 0 10px 20px 2px var(--background-tertiary);
+  --elevation-medium: 0 10px 20px 6px var(--background-floating);
+  --elevation-high: 0 20px 20px 10px var(--background-floating);
 }

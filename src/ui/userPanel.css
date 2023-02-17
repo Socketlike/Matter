@@ -4,6 +4,11 @@ section[class^='panels-'] [class^='container-'] {
   height: 100%;
 }
 
+/* Panel color */
+section[class^='panels-'] [class^='container-'] {
+  background-color: hsl(var(--primary-700-hsl) / 0.5);
+}
+
 /* Popout button */
 section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] {
   max-width: 100%;

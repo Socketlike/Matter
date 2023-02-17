@@ -1,0 +1,35 @@
+/* --- Drop shadow on channel header --- */
+section[class*='container-'][aria-label='Channel header'] {
+  box-shadow: var(--elevation-low);
+}
+/* !-- Drop shadow on channel header --! */
+
+/* --- Forum channel tweaks --- */
+
+/* Change search bar's placeholder text color */
+[aria-label='Create Post'] form [class^='formContainer-'] [class^='form-'] [class^='titleContainer-'] [class*='flex-'] div textarea::placeholder {
+  color: var(--text-normal);
+}
+
+/* Border around the tags container */
+[class^='tagsContainer-'] {
+  background-color: var(--background-primary);
+  padding: 8px;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+
+/* Rounding corners of buttons */
+[class^='tagsContainer-'] button {
+  border-radius: 8px;
+}
+[class^='tagsContainer-'] [class^='tagList-'] [class^='tagListInner-'] [class*='tag-'] {
+  border-radius: 8px;
+}
+
+/* Resize gap of tag list */
+[class^='tagsContainer-'] [class^='tagList-'] [class^='tagListInner-'] {
+  gap: 6px;
+}
+
+/* !-- Forum channel tweaks --! */

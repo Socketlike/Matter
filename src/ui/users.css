@@ -22,15 +22,67 @@ foreignObject[mask^='url(#svg-mask-avatar-status-round-'] [class^='avatarHintInn
 /* !-- Override Discord's avatar masks --! */
 
 /* --- Tweaks on user popouts --- */
+
+/* No circular border on banner */
 svg[class^='bannerSVGWrapper-'] foreignObject {
   mask: none;
 }
 
+/* Add a border around avatar */
 header [class^='header-'] div [class^='wrapper-'],
-[class^='userPopoutInner-'] [class*='avatarWrapper-'] [class^='avatarHoverTarget-'] div {
+[class^='userPopoutInner-'] [class*='avatarWrapper-'] [class^='avatarHoverTarget-'] {
+  box-shadow: 0 0 0 6px var(--profile-gradient-primary-color, var(--background-secondary));
   border-radius: 20%;
-  box-shadow: 0px 0px 5px 3px var(--background-tertiary);
 }
+[class^='userPopoutInner-'] [class*='avatarWrapper-'] [class^='avatarHoverTarget-'] div {
+  border-radius: 0;
+}
+
+/* Highlight profile sections */
+[class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] {
+  background-color: var(--background-secondary);
+  padding: 0;
+  border-radius: 6px;
+  border: 8px solid transparent;
+  margin-top: 12px;
+}
+[class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] h3 {
+  padding: 2px 0;
+  background-color: var(--background-modifier-active);
+  border: 2px solid transparent;
+  text-align: center;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Fix for Spotify section */
+[class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] [class^='activityUserPopoutV2-'] [class^='headerContainer-'] h3 {
+  flex-grow: 1;
+}
+[class^='userPopoutOverlayBackground-']
+  [class^='scroller-']
+  [class^='section-']
+  [class^='activityUserPopoutV2-']
+  [class^='flex-']
+  img[class^='platformIcon-'] {
+  width: 20px;
+  margin-top: 2px;
+  margin-right: 2px;
+}
+[class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] [class^='activityUserPopoutV2-'] [class^='bodyNormal-'] {
+  margin-top: 12px;
+}
+[class^='userPopoutOverlayBackground-']
+  [class^='scroller-']
+  [class^='section-']
+  [class^='activityUserPopoutV2-']
+  [class^='bodyNormal-']
+  [class^='assets-']
+  a
+  img[class*='assetsLargeImageSpotify-'] {
+  border-radius: 20%;
+}
+
 /* !-- Tweaks on user popouts --! */
 
 /* --- Destroy Nitro icon on GIF banners --- */
