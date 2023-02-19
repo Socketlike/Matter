@@ -8,14 +8,32 @@
 [class^='tutorialContainer-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapperSimple-'],
 [data-list-id='guildsnav'] [class^='scroller-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapperSimple-'],
 [data-list-id='guildsnav'] [class^='scroller-'] [class^='listItem-'] :not([class]) [class^='wrapperSimple-'],
-[aria-label='Servers'] [class^='listItem-'] :not([class]) div [class^='wrapperSimple-'],
+[data-list-id='guildsnav'] > [class^='scroller-'] > [aria-label]:not([class]) > [class^='listItem-'] :not([class]) div [class^='wrapperSimple-'],
 [class^='folder-'][data-list-item-id^='guildsnav'] div {
   border-radius: 20%;
 }
 
-[aria-label='Servers'] [class^='listItem-'] :not([class]) div [class^='wrapper-'] svg defs path,
-[aria-label='Servers'] [class^='wrapper-'] [class^='listItem-'] [data-dnd-name] [class^='wrapper-'] svg defs path,
-[data-list-id='guildsnav'] [class^='scroller-'] [class^='listItem-'] div [class^='wrapper-'] svg defs path,
+[data-list-id='guildsnav']
+  [class^='scroller-']
+  > [aria-label]:not([class])
+  [class^='listItem-']
+  > :not([class])
+  div
+  [class^='wrapper-']
+  svg
+  defs
+  path,
+[data-list-id='guildsnav']
+  [class^='scroller-']
+  > [aria-label]:not([class])
+  [class^='wrapper-']
+  [class^='listItem-']
+  [data-dnd-name]
+  [class^='wrapper-']
+  svg
+  defs
+  path,
+[data-list-id='guildsnav'] > [class^='scroller-'] > [class^='listItem-'] > div [class^='wrapper-'] svg defs path,
 [class^='tutorialContainer-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapper-'] svg defs path {
   d: var(--rounded-mask);
 }

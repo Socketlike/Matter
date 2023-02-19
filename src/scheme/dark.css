@@ -11,7 +11,7 @@
   --primary-345-hsl: 220 calc(var(--saturation-factor, 1) * 25%) 58%;
   --primary-360-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 75%; /* Channel text color */
   --primary-400-hsl: 220 calc(var(--saturation-factor, 1) * 44%) 68%; /* Channel icon color */
-  --primary-430-hsl: 220 calc(var(--saturation-factor, 1) * 35%) 15%;
+  --primary-430-hsl: 220 calc(var(--saturation-factor, 1) * 90%) 80%;
   --primary-460-hsl: 220 calc(var(--saturation-factor, 1) * 27%) 14%;
   --primary-500-hsl: 220 calc(var(--saturation-factor, 1) * 58%) 33%;
   --primary-530-hsl: 220 calc(var(--saturation-factor, 1) * 55%) 20%; /* Chat header */
@@ -59,7 +59,7 @@
   --scrollbar-auto-scrollbar-color-track: var(--primary-700);
   --scrollbar-auto-scrollbar-color-thumb: var(--primary-900);
   --background-mentioned: hsl(var(--brand-600-hsl) / 0.2);
-  --elevation-low: 0 10px 20px 2px var(--background-tertiary);
-  --elevation-medium: 0 10px 20px 6px var(--background-floating);
-  --elevation-high: 0 20px 20px 10px var(--background-floating);
+  --elevation-low: 0 1px 20px 0 var(--background-tertiary);
+  --elevation-medium: 0 3px 20px 2px var(--background-floating);
+  --elevation-high: 0 6px 20px 4px var(--background-floating);
 }

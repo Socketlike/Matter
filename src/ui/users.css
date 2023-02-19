@@ -46,16 +46,23 @@ header [class^='header-'] div [class^='wrapper-'],
   border: 8px solid transparent;
   margin-top: 12px;
 }
+
+[class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] h2,
 [class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] h3 {
   padding: 2px 0;
-  background-color: var(--background-modifier-active);
+  background-color: var(--profile-body-background-hover, var(--background-modifier-active));
   border: 2px solid transparent;
   text-align: center;
   display: block;
   border-radius: 6px;
 }
 
+[class*='userProfileInnerThemedWithBanner-'] [class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] {
+  background-color: var(--profile-body-background-color);
+}
+
 /* Fix for Spotify section */
+[class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] [class^='activityUserPopoutV2-'] [class^='headerContainer-'] h2,
 [class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] [class^='activityUserPopoutV2-'] [class^='headerContainer-'] h3 {
   flex-grow: 1;
 }
