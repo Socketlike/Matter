@@ -1,6 +1,8 @@
 /* --- Override Discord's avatar masks --- */
 mask[id^='svg-mask-avatar-status-round-'] circle:first-child,
 mask[id^='svg-mask-avatar-round-'] circle:first-child,
+mask[id^='svg-mask-avatar-status-mobile-'] circle,
+mask[id^='svg-mask-avatar-status-typing-'] circle,
 mask[id='svg-mask-avatar-default'] circle {
   r: 1;
 }
