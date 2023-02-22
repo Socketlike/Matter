@@ -1,7 +1,15 @@
-# Matter
+<h1 align="center">Matter</h1>
 
-An atom is a very small thing.  
-Combine a ton of them, and you get what's normally called "matter".  
+## Preview
+
+### Server UI & User popout
+![Server UI & User popout](preview/1.png)
+  
+### Nitro User popout
+![Nitro User popout](preview/2.png)
+  
+### DM Menu
+![DM Menu](preview/3.png)
 
 > **Warning** This theme is a **work in progress**. The current look of the theme is subject to change.
 > Things might also look really bad (ex. white text on a bright background).
