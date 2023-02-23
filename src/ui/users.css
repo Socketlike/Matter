@@ -61,7 +61,27 @@ header [class^='header-'] div [class^='wrapper-'],
 }
 
 [class*='userProfileInnerThemedWithBanner-'] [class^='userPopoutOverlayBackground-'] [class^='scroller-'] [class^='section-'] {
-  background-color: var(--profile-body-background-color);
+  background-color: var(--profile-body-divider-color);
+}
+
+[class^='userProfileModalInner-'] :not([class^='topSection-']) [class^='body-'] [class^='infoScroller-'] [class^='userInfoSection-'] > h1 {
+  background-color: var(--profile-body-background-hover, var(--background-modifier-active));
+  text-align: center;
+  padding: 2px 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+
+[class^='userProfileModalInner-'] :not([class^='topSection-']) [class^='body-'] [class^='infoScroller-'] [class^='userInfoSection-'] > :not(h1) {
+  background-color: var(--background-secondary);
+  border: 8px solid transparent;
+  border-radius: 6px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+[class*='userProfileInnerThemedWithBanner-'] :not([class^='topSection-']) [class^='body-'] [class^='infoScroller-'] [class^='userInfoSection-'] > :not(h1) {
+  background-color: var(--profile-body-divider-color); 
 }
 
 /* Fix for Spotify section */
