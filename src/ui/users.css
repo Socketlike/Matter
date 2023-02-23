@@ -33,6 +33,7 @@ svg[class^='bannerSVGWrapper-'] foreignObject {
 /* Add a border around avatar */
 header [class^='header-'] div [class^='wrapper-'],
 [class^='userPopoutInner-'] [class*='avatarWrapper-'] [class^='avatarHoverTarget-'] {
+  background-color: var(--profile-gradient-primary-color, var(--background-secondary));
   box-shadow: 0 0 0 6px var(--profile-gradient-primary-color, var(--background-secondary));
   border-radius: 20%;
 }
