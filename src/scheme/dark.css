@@ -1,29 +1,45 @@
 .theme-custom.theme-dark,
 .theme-dark {
+  --primary-130-hsl: var(--matter-brand-hue) 50% 85%;
+  --primary-230-hsl: var(--matter-brand-hue) 30% 90%;
+  --primary-330-hsl: var(--matter-brand-hue) 25% 65%;
+  --primary-360-hsl: var(--matter-brand-hue) 12% 55%;
+  --primary-400-hsl: var(--matter-brand-hue) 23% 65%;
+  --primary-500-hsl: var(--matter-brand-hue) 10% 35%;
+  --primary-560-hsl: var(--matter-brand-hue) 14% 8%;
+  --primary-600-hsl: var(--matter-brand-hue) 10% 12%;
+  --primary-630-hsl: var(--matter-brand-hue) 7% 15%;
+  --primary-660-hsl: var(--matter-brand-hue) 15% 9%;
+  --primary-700-hsl: var(--matter-brand-hue) 12% 8%;
+}
+
+/*
+.theme-custom.theme-dark,
+.theme-dark {
   --primary-100-hsl: 220 calc(var(--saturation-factor, 1) * 100%) 85%;
-  --primary-130-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 90%; /* Header */
+  --primary-130-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 90%; 
   --primary-160-hsl: 220 calc(var(--saturation-factor, 1) * 30%) 19%;
-  --primary-200-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 85%; /* Chat text color & some misc */
-  --primary-230-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 82%; /* Interactive hover */
+  --primary-200-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 85%; 
+  --primary-230-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 82%; 
   --primary-260-hsl: 220 calc(var(--saturation-factor, 1) * 30%) 17%;
-  --primary-300-hsl: 220 calc(var(--saturation-factor, 1) * 50%) 70%; /* Buttons color */
-  --primary-330-hsl: 220 calc(var(--saturation-factor, 1) * 68%) 74%; /* Timestamp */
+  --primary-300-hsl: 220 calc(var(--saturation-factor, 1) * 50%) 70%; 
+  --primary-330-hsl: 220 calc(var(--saturation-factor, 1) * 68%) 74%; 
   --primary-345-hsl: 220 calc(var(--saturation-factor, 1) * 25%) 58%;
-  --primary-360-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 75%; /* Channel text color */
-  --primary-400-hsl: 220 calc(var(--saturation-factor, 1) * 44%) 68%; /* Channel icon color */
+  --primary-360-hsl: 220 calc(var(--saturation-factor, 1) * 70%) 75%; 
+  --primary-400-hsl: 220 calc(var(--saturation-factor, 1) * 44%) 68%; 
   --primary-430-hsl: 220 calc(var(--saturation-factor, 1) * 90%) 80%;
   --primary-460-hsl: 220 calc(var(--saturation-factor, 1) * 27%) 14%;
   --primary-500-hsl: 220 calc(var(--saturation-factor, 1) * 58%) 33%;
-  --primary-530-hsl: 220 calc(var(--saturation-factor, 1) * 55%) 20%; /* Chat header */
+  --primary-530-hsl: 220 calc(var(--saturation-factor, 1) * 55%) 20%; 
   --primary-560-hsl: 220 calc(var(--saturation-factor, 1) * 56%) 30%;
-  --primary-600-hsl: 220 calc(var(--saturation-factor, 1) * 68%) 15%; /* Primary */
-  --primary-630-hsl: 220 calc(var(--saturation-factor, 1) * 85%) 12%; /* Secondary */
-  --primary-645-hsl: 220 calc(var(--saturation-factor, 1) * 85%) 10%; /* Home channel */
-  --primary-660-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 12%; /* ^ Alt */
-  --primary-700-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 9%; /* Tertiary */
+  --primary-600-hsl: 220 calc(var(--saturation-factor, 1) * 68%) 15%; 
+  --primary-630-hsl: 220 calc(var(--saturation-factor, 1) * 85%) 12%; 
+  --primary-645-hsl: 220 calc(var(--saturation-factor, 1) * 85%) 10%; 
+  --primary-660-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 12%; 
+  --primary-700-hsl: 220 calc(var(--saturation-factor, 1) * 80%) 9%; 
   --primary-730-hsl: 220 calc(var(--saturation-factor, 1) * 36%) 12%;
   --primary-760-hsl: 220 calc(var(--saturation-factor, 1) * 32%) 11%;
-  --primary-800-hsl: 220 calc(var(--saturation-factor, 1) * 95%) 8%; /* Popups */
+  --primary-800-hsl: 220 calc(var(--saturation-factor, 1) * 95%) 8%; 
   --primary-830-hsl: 220 calc(var(--saturation-factor, 1) * 38%) 10%;
   --primary-860-hsl: 220 calc(var(--saturation-factor, 1) * 41%) 10%;
   --primary-900-hsl: 220 calc(var(--saturation-factor, 1) * 48%) 10%;
@@ -62,4 +78,4 @@
   --elevation-low: 0 1px 20px 0 var(--background-tertiary);
   --elevation-medium: 0 3px 20px 2px var(--background-floating);
   --elevation-high: 0 6px 20px 4px var(--background-floating);
-}
+} */

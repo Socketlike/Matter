@@ -4,7 +4,7 @@
  *
  * --- OR ---
  *
- * Import individual "atoms":
+ * Import individual modules:
  *
  * Brand colors:
  * @import url('https://socketlike.github.io/Matter/src/scheme/brand.css');
@@ -14,8 +14,14 @@
  *
  * Light theme related colors:
  * @import url('https://socketlike.github.io/Matter/src/scheme/light.css');
+ *
+ * Don't forget to set --matter-brand-hue!
  */
 
 @import url('https://socketlike.github.io/Matter/src/scheme/brand.css');
 @import url('https://socketlike.github.io/Matter/src/scheme/dark.css');
 @import url('https://socketlike.github.io/Matter/src/scheme/light.css');
+
+:root {
+  --matter-brand-hue: 74;
+}

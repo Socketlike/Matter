@@ -1,3 +1,7 @@
 @import 'brand.css';
 @import 'dark.css';
 @import 'light.css';
+
+:root {
+  --matter-brand-hue: 74;
+}

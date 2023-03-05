@@ -40,9 +40,6 @@
 /* !-- Override Discord's server / folder masks --! */
 
 /* --- Coloring servers with no image --- */
-foreignObject [class^='wrapper-'][data-list-item-id^='guildsnav'] [class*='acronym-'] {
-  color: var(--brand-experiment);
-}
 foreignObject [class^='wrapper-'][class*='selected-'][data-list-item-id^='guildsnav'] [class*='acronym-'],
 foreignObject [class^='wrapper-'][data-list-item-id^='guildsnav'] [class*='acronym-']:hover {
   color: var(--background-tertiary);
