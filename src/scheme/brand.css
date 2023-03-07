@@ -6,7 +6,7 @@
   --brand-160-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 79%) 70%;
   --brand-200-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 68%) 66%;
   --brand-230-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 61%) 62%;
-  --brand-260-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 58%) 60%;
+  --brand-260-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 60%) 75%;
   --brand-300-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 65%) 62%;
   --brand-330-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 68%) 63%;
   --brand-345-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 65%) 61%;
@@ -14,9 +14,9 @@
   --brand-400-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 53%) 54%;
   --brand-430-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 49%) 53%;
   --brand-460-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 45%) 52%;
-  --brand-500-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 65%) 60%;
+  --brand-500-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 45%) 55%;
   --brand-530-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 66%) 54%;
-  --brand-560-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 68%) 50%;
+  --brand-560-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 45%) 30%;
   --brand-600-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 44%) 51%;
   --brand-630-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 47%) 48%;
   --brand-660-hsl: var(--matter-brand-hue, 84) calc(var(--saturation-factor, 1) * 52%) 49%;

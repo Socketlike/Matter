@@ -19,9 +19,6 @@ section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] {
   background-color: var(--background-primary);
   border-radius: 8px;
 }
-section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-']:hover {
-  background-color: var(--background-modifier-selected);
-}
 section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] > [class*='avatar-'] {
   margin-left: 4px;
 }
@@ -39,19 +36,18 @@ section[class^='panels-'] [class^='container-'] [class^='flex-'] {
 }
 section[class^='panels-'] [class^='container-'] [class^='flex-'] button {
   flex-grow: 1;
-  border-radius: 8px;
   margin: 0 4px;
   background-color: var(--background-primary);
 }
 section[class^='panels-'] [class^='container-'] [class^='flex-'] button:first-child {
   flex-grow: 1;
-  border-radius: 8px;
+  border-radius: 6px 0 0 6px;
   margin-right: 4px;
   background-color: var(--background-primary);
 }
 section[class^='panels-'] [class^='container-'] [class^='flex-'] button:last-child {
   flex-grow: 1;
-  border-radius: 8px;
+  border-radius: 0 6px 6px 0;
   margin-left: 4px;
   background-color: var(--background-primary);
 }

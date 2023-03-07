@@ -1,0 +1,48 @@
+/**
+ * ### MASKS ###
+ */
+
+/* --- Add rounded borders mask --- */
+.theme-dark,
+.theme-light,
+.theme-custom {
+  --rounded-mask: path('M48 24C48 50 50 48 24 48-2 48 0 50 0 24 0-2-2 0 24 0 50 0 48-2 48 24Z');
+}
+/* !-- Add rounded borders mask --! */
+
+/* --- Decircularize elements that mainly uses border-radius for its round effects --- */
+[class^='tutorialContainer-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapperSimple-'],
+[data-list-id='guildsnav'] [class^='scroller-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapperSimple-'],
+[data-list-id='guildsnav'] [class^='scroller-'] [class^='listItem-'] :not([class]) [class^='wrapperSimple-'],
+[data-list-id='guildsnav'] > [class^='scroller-'] > [aria-label]:not([class]) > [class^='listItem-'] :not([class]) div [class^='wrapperSimple-'],
+[class^='folder-'][data-list-item-id^='guildsnav'] div {
+  border-radius: 20%;
+}
+/* !-- Decircularize elements that mainly uses border-radius for its round effects --! */
+
+/* --- Override Discord's circular masks with our own rounded borders mask --- */
+[data-list-id='guildsnav']
+  [class^='scroller-']
+  > [aria-label]:not([class])
+  [class^='listItem-']
+  > :not([class])
+  div
+  [class^='wrapper-']
+  svg
+  defs
+  path,
+[data-list-id='guildsnav']
+  [class^='scroller-']
+  > [aria-label]:not([class])
+  [class^='wrapper-']
+  [class^='listItem-']
+  [data-dnd-name]
+  [class^='wrapper-']
+  svg
+  defs
+  path,
+[data-list-id='guildsnav'] > [class^='scroller-'] > [class^='listItem-'] > div [class^='wrapper-'] svg defs path,
+[class^='tutorialContainer-'] [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapper-'] svg defs path {
+  d: var(--rounded-mask);
+}
+/* !-- Override Discord's circular masks with our own rounded borders mask --! */
