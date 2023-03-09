@@ -1,5 +1,8 @@
+/**
+ * ### MISCELLANEOUS ###
+ */
+
 /* --- Shadow under popouts --- */
 [class^='layerContainer-'] > [id^='popout_'] > [class^='animator'] > div {
   box-shadow: var(--elevation-high);
 }
-/* !-- Shadow under popouts --! */

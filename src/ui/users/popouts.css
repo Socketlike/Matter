@@ -6,7 +6,6 @@
 svg[class^='bannerSVGWrapper-'] foreignObject {
   mask: none;
 }
-/* !-- No circular border on banner --! */
 
 /* --- Add a border around avatar --- */
 header [class^='header-'] div [class^='wrapper-'],
@@ -33,19 +32,18 @@ header [class^='header-'] div [class^='wrapper-'],
 [class^='userPopoutInner-'] [class*='avatarWrapper-'] [class^='avatarHoverTarget-'] div {
   border-radius: 0;
 }
-/* !-- Add a border around avatar --! */
 
 /**
- * #-- Beautify profile sections --#
+ * --- Beautify profile sections ---
  */
 
-/* Add more spacing between sections */
+/* -- Add more spacing between sections -- */
 [class^='userPopoutOverlayBackground-'] > [class^='scroller-'] > [class^='section-']:not([class*='lastSection-']) {
   padding: 0;
   margin-top: 12px;
 }
 
-/* Add background color to section header & center it */
+/* -- Add background color to section header & center it -- */
 [class^='userPopoutOverlayBackground-'] > [class^='scroller-'] > [class^='section-'] h2,
 [class^='userPopoutOverlayBackground-'] > [class^='scroller-'] > [class^='section-'] h3,
 [class^='userProfileModalInner-'] > :not([class^='topSection-']) > [class^='body-'] > [class^='infoScroller-'] > [class^='userInfoSection-'] h1,
@@ -65,7 +63,7 @@ header [class^='header-'] div [class^='wrapper-'],
   margin-bottom: 4px;
 }
 
-/* Add background color on section content */
+/* -- Add background color on section content -- */
 [class^='userPopoutOverlayBackground-'] > [class^='scroller-'] > [class^='section-']:not([class*='lastSection-']) > div:not([class*='activity-']),
 [class^='userPopoutOverlayBackground-'] > [class^='scroller-'] > [class*='lastSection-'] > [class^='note-'] {
   border: 8px solid transparent;
@@ -73,7 +71,7 @@ header [class^='header-'] div [class^='wrapper-'],
   border-radius: 0 0 6px 6px;
 }
 
-/* Add background to section content in user modal popouts */
+/* -- Add background to section content in user modal popouts -- */
 [class^='userProfileModalInner-']
   > :not([class^='topSection-'])
   > [class^='body-']
@@ -87,7 +85,7 @@ header [class^='header-'] div [class^='wrapper-'],
   margin-bottom: 16px;
 }
 
-/* Make spacing between section header & section content smaller in user modal popouts */
+/* -- Make spacing between section header & section content smaller in user modal popouts -- */
 [class^='userProfileModalInner-'] > :not([class^='topSection-']) > [class^='body-'] > [class^='infoScroller-'] > [class^='userInfoSection-'] > h1 {
   margin-bottom: 4px;
 }
@@ -96,7 +94,7 @@ header [class^='header-'] div [class^='wrapper-'],
  *- Specific "hacks" for activity section
  */
 
-/* Remove margin from header & make them full sized */
+/* - Remove margin from header & make them full sized - */
 [class^='userPopoutOverlayBackground-']
   > [class^='scroller-']
   > [class^='section-']:not([class*='lastSection-'])
@@ -132,7 +130,7 @@ header [class^='header-'] div [class^='wrapper-'],
   width: 100%;
 }
 
-/* Add background color to section */
+/* - Add background color to section - */
 [class^='userPopoutOverlayBackground-']
   > [class^='scroller-']
   > [class^='section-']:not([class*='lastSection-'])
@@ -150,7 +148,7 @@ header [class^='header-'] div [class^='wrapper-'],
   margin: 0;
 }
 
-/* Round corners at the end of section */
+/* - Round corners at the end of section - */
 [class^='userPopoutOverlayBackground-']
   > [class^='scroller-']
   > [class^='section-']:not([class*='lastSection-'])
@@ -167,11 +165,13 @@ header [class^='header-'] div [class^='wrapper-'],
 }
 
 /**
+ * -
  * Button container "hacks"
  * 
  * Since I cannot add a border radius to the status details container and
  * the buttons container at the same time, I made the button container expand
  * on its own and it becomes the "border" of the status details when there's no buttons.
+ * -
  */
 [class^='userPopoutOverlayBackground-']
   > [class^='scroller-']
@@ -184,7 +184,7 @@ header [class^='header-'] div [class^='wrapper-'],
   border-width: 0 8px;
 }
 
-/* Add spacing to bottom of button container only when it has buttons */
+/* - Add spacing to bottom of button container only when it has buttons - */
 [class^='userPopoutOverlayBackground-']
   > [class^='scroller-']
   > [class^='section-']:not([class*='lastSection-'])
@@ -194,7 +194,7 @@ header [class^='header-'] div [class^='wrapper-'],
   margin-bottom: 8px;
 }
 
-/* Fix border for user modal popout */
+/* - Fix border for user modal popout - */
 [class^='userProfileModalInner-']
   > :not([class^='topSection-'])
   > [class^='body-']
@@ -204,21 +204,12 @@ header [class^='header-'] div [class^='wrapper-'],
   border-width: 8px;
 }
 
-/* Increase width of section in user modal popouts */
+/* - Increase width of section in user modal popouts - */
 [class^='userProfileModalInner-'] > :not([class^='topSection-']) > [class^='body-'] > [class^='listScroller-'] > [class*='userProfileActivity-'] {
   padding-right: 8px;
 }
-
-/**
- *! Specific "hacks" for activity section
- */
-
-/**
- * !-- Beautify profile sections --!
- */
 
 /* --- Remove Nitro icon on GIF banners --- */
 svg[class^='bannerSVGWrapper-'] foreignObject [class*='bannerPremium-'] [class^='premiumIconWrapper-'] {
   display: none;
 }
-/* !-- Remove Nitro icon on GIF banners --! */

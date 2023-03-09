@@ -1,1 +1,12 @@
-@import 'replugged/addonList.css';
+/**
+ * ### REPLUGGED ADDON LIST ###
+ */
+
+/* --- Make addon list a grid --- */
+.replugged-addon-cards {
+  grid-template-columns: 1fr 1fr;
+}
+
+.replugged-addon-cards b {
+  width: max-content;
+}

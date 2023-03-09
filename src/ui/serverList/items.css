@@ -8,13 +8,11 @@ foreignObject [class^='wrapper-'][data-list-item-id^='guildsnav'] [class*='acron
   color: var(--background-tertiary);
   background-color: var(--brand-experiment);
 }
-/* !-- Coloring servers with no image --! */
 
 /* --- Make the unread pill less of a circular blob --- */
 [class^='listItem-'] [class^='pill-'] span {
   border-radius: 0 2px 2px 0;
 }
-/* !-- Make the unread pill less of a circular blob --! */
 
 /* --- Recolor buttons --- */
 [class^='tutorialContainer-']
@@ -39,4 +37,3 @@ foreignObject [class^='wrapper-'][data-list-item-id^='guildsnav'] [class*='acron
 [data-list-id='guildsnav'] [class^='listItem-'] :not([class]) [class^='wrapper']:hover foreignObject div div {
   color: var(--background-tertiary);
 }
-/* !-- Recolor buttons --! */

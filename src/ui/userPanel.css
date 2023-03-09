@@ -1,15 +1,19 @@
-/* --- Convert panel to row --- */
+/**
+ * ### USER PANEL ###
+ */
+
+/* --- Make panel not a row --- */
 section[class^='panels-'] [class^='container-'] {
   flex-direction: column;
   height: 100%;
 }
 
-/* Panel color */
+/* --- Panel color --- */
 section[class^='panels-'] [class^='container-'] {
   background-color: hsl(var(--primary-700-hsl) / 0.5);
 }
 
-/* Popout button */
+/* --- Style user popout button --- */
 section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] {
   max-width: 100%;
   width: 100%;
@@ -29,11 +33,13 @@ section[class^='panels-'] [class^='container-'] [class^='avatarWrapper-'] > [cla
   font-size: 16px;
 }
 
-/* Other buttons */
+/* --- Other buttons --- */
 section[class^='panels-'] [class^='container-'] [class^='flex-'] {
   width: 100%;
   margin-bottom: 8px;
 }
+
+/* Using first-child and last-child to future-proof for plugins */
 section[class^='panels-'] [class^='container-'] [class^='flex-'] button {
   flex-grow: 1;
   margin: 0 4px;
@@ -52,4 +58,17 @@ section[class^='panels-'] [class^='container-'] [class^='flex-'] button:last-chi
   background-color: var(--background-primary);
 }
 
-/* !-- Convert panel to row --! */
+/* --- Compact panel user popout: Removes profile info --- */
+[class^='accountProfilePopoutWrapper-']
+  > [class^='userPopoutOuter-']
+  > [class^='userPopoutInner-']
+  > [class^='userPopoutOverlayBackground-']
+  > [class^='scroller-'],
+[class^='accountProfilePopoutWrapper-']
+  > [class^='userPopoutOuter-']
+  > [class^='userPopoutInner-']
+  > [class^='userPopoutOverlayBackground-']
+  > [class^='scroller-']
+  + [class^='divider-'] {
+  display: none;
+}
