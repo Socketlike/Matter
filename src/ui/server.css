@@ -25,6 +25,7 @@ section[class*='container-'][aria-label='Channel header'] {
   border-radius: 6px;
   background: var(--channeltextarea-background);
   width: 44px;
+  height: 44px;
   margin-right: 8px;
   top: 0;
 }
@@ -37,7 +38,7 @@ section[class*='container-'][aria-label='Channel header'] {
   background-color: var(--channeltextarea-background);
   border-radius: 6px;
 }
-[class^='channelTextArea-'] > [class^='scrollableContainer-'] > [class^='inner-'] > [class^='textArea-'] > div:not([class]) > div {
+[class^='channelTextArea-'] > [class^='scrollableContainer-'] > [class^='inner-'] > [class^='attachWrapper-'] + [class^='textArea-'] > div:not([class]) > div {
   margin-left: 10px;
 }
 [class^='channelTextArea-'] > [class^='scrollableContainer-'] > [class^='inner-'] > [class^='buttons-'] {
