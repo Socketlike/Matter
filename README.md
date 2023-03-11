@@ -26,5 +26,5 @@ There is almost literally no customizations except for the hue of the color sche
 
 The release's version is likely to be outdated. Build the theme yourself.
 
-> **Warning** This theme is a **work in progress**. The current look of the theme is subject to change. Things might also look really bad (ex. white
-> text on a bright background).
+> **Warning**  
+> This theme is a **work in progress**. The current look of the theme is subject to change. Things might also look really bad (ex. white text on a bright background).
