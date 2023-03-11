@@ -11,8 +11,8 @@ section[class*='container-'][aria-label='Channel header'] {
 [class^='chatContent-'] > [class^='form-'] {
   padding-right: 8px;
 }
-[class^='channelTextArea-'] {
-  background-color: transparent;
+[class^='form-'] > [class^='channelTextArea'] {
+  padding-bottom: 2px;
 }
 [class^='channelTextArea-'] > [class^='scrollableContainer-'] {
   background: none;
@@ -26,6 +26,7 @@ section[class*='container-'][aria-label='Channel header'] {
   background: var(--channeltextarea-background);
   width: 44px;
   height: 44px;
+  margin-left: 4px;
   margin-right: 8px;
   top: 0;
 }

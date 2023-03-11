@@ -57,8 +57,10 @@ header [class^='header-'] div [class^='wrapper-'],
   padding: 2px 0;
   background-color: var(--profile-body-divider-color);
   border: 2px solid transparent;
-  text-align: center;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2px;
   border-radius: 6px 6px 0 0;
   margin-bottom: 4px;
 }
@@ -184,7 +186,7 @@ header [class^='header-'] div [class^='wrapper-'],
   border-width: 0 8px;
 }
 
-/* - Add spacing to bottom of button container only when it has buttons - */
+/* - Add spacing to button container only when it has buttons - */
 [class^='userPopoutOverlayBackground-']
   > [class^='scroller-']
   > [class^='section-']:not([class*='lastSection-'])
@@ -192,6 +194,7 @@ header [class^='header-'] div [class^='wrapper-'],
   > div[class^='flex-']
   > :last-child {
   margin-bottom: 8px;
+  margin-top: 4px;
 }
 
 /* - Fix border for user modal popout - */

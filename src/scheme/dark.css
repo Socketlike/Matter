@@ -1,17 +1,17 @@
 .theme-custom.theme-dark,
 .theme-dark {
   --primary-130-hsl: var(--matter-brand-hue) 55% 90%;
-  --primary-230-hsl: var(--matter-brand-hue) 30% 90%;
+  --primary-230-hsl: var(--matter-brand-hue) 38% 80%;
   --primary-330-hsl: var(--matter-brand-hue) 20% 70%;
   --primary-360-hsl: var(--matter-brand-hue) 16% 60%;
   --primary-400-hsl: var(--matter-brand-hue) 23% 65%;
   --primary-500-hsl: var(--matter-brand-hue) 18% 45%;
   --primary-560-hsl: var(--matter-brand-hue) 14% 8%;
-  --primary-600-hsl: var(--matter-brand-hue) 9% 14%;
-  --primary-630-hsl: var(--matter-brand-hue) 8% 12%;
+  --primary-600-hsl: var(--matter-brand-hue) 15% 10%;
+  --primary-630-hsl: var(--matter-brand-hue) 18% 8%;
   --primary-645-hsl: var(--matter-brand-hue) 12% 10%;
   --primary-660-hsl: var(--matter-brand-hue) 15% 9%;
-  --primary-700-hsl: var(--matter-brand-hue) 8% 10%;
+  --primary-700-hsl: var(--matter-brand-hue) 25% 2%;
   --primary-730-hsl: var(--matter-brand-hue) 10% 30%;
   --primary-800-hsl: var(--matter-brand-hue) 20% 6%;
   --primary-900-hsl: var(--matter-brand-hue) 80% 2%;
