@@ -16,12 +16,16 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
-    "@parcel/config-default": "^2.8.2",
-    "@parcel/core": "^2.8.2",
-    "@parcel/transformer-sass": "^2.8.2",
-    "@types/node": "^18.11.19",
-    "prettier": "^2.8.3",
-    "replugged": "4.0.0-beta0.27"
+    "@electron/asar": "^3.2.3",
+    "@parcel/config-default": "^2.8.3",
+    "@parcel/core": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "@types/node": "^18.15.1",
+    "esbuild": "^0.17.11",
+    "esbuild-plugin-less": "^1.1.13",
+    "prettier": "^2.8.4",
+    "replugged": "^4.1.0"
   }
 }
