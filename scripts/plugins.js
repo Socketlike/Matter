@@ -53,8 +53,8 @@ export const report = () => ({
     build.onEnd((result) => {
       console.log(
         '\x1b[1;36mbuild:\x1b[0m finished with',
-        `${result.errors.length ? `\x1b[1;31m${results.errors.length}` : '\x1b[1;32m0'} error(s)\x1b[0m`,
-        `and ${result.warnings.length ? `\x1b[1;33m${results.warnings.length}` : `\x1b[1;32m0`} warning(s)\x1b[0m`,
+        `${result.errors.length ? `\x1b[1;31m${result.errors.length}` : '\x1b[1;32m0'} error(s)\x1b[0m`,
+        `and ${result.warnings.length ? `\x1b[1;33m${result.warnings.length}` : `\x1b[1;32m0`} warning(s)\x1b[0m`,
       );
     }),
 });

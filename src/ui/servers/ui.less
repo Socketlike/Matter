@@ -1,0 +1,98 @@
+/**
+ * ### SERVER UI ###
+ */
+
+/* --- Drop shadow on channel header --- */
+section[class*='container-'][aria-label='Channel header'] {
+  box-shadow: var(--elevation-low);
+}
+
+/* --- Bubble bar like chat bar --- */
+[class^='chatContent-'] {
+  /* Select the main bar */
+  > [class^='form-'] {
+    padding-right: 8px;
+
+    /* Select inner bar */
+    > [class^='channelTextArea'] {
+      padding-bottom: 2px;
+
+      /* Select the inner of the inner bar */
+      > [class^='scrollableContainer-'] {
+        background: none;
+        border-radius: 0;
+
+        /* Inner of the inner of the inner */
+        > [class^='inner-'] {
+          padding-left: 0;
+
+          /* Upload button */
+          > [class^='attachWrapper-'] {
+            border-radius: 6px;
+            background: var(--channeltextarea-background);
+            width: 44px;
+            height: 44px;
+            margin-left: 4px;
+            margin-right: 8px;
+            top: 0;
+
+            /* Actual button element */
+            > button {
+              margin: 0;
+              padding: 0;
+              width: -webkit-fill-available;
+            }
+          }
+
+          /* Typing area */
+          > [class^='textArea-'] {
+            background-color: var(--channeltextarea-background);
+            border-radius: 6px;
+            /* Input element */
+            > div:not([class]) > div {
+              margin-left: 10px;
+            }
+          }
+
+          /* Gift, GIF, Stickers, Emojis buttons */
+          > [class^='buttons-'] {
+            margin-left: 8px;
+            background-color: var(--channeltextarea-background);
+            border-radius: 6px;
+            margin-right: 0;
+            > div,
+            > button {
+              width: 44px;
+            }
+            > div > button {
+              width: -webkit-fill-available;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --- Forum channel tweaks --- */
+
+/* Change search bar's placeholder text color to a lighter / darker color */
+[aria-label='Create Post'] form [class^='formContainer-'] [class^='form-'] [class^='titleContainer-'] [class*='flex-'] div textarea::placeholder {
+  color: var(--text-normal);
+}
+
+/* Tag buttons */
+[class^='tagsContainer-'] {
+  background-color: var(--background-primary);
+  padding: 8px;
+  margin-top: 24px;
+  border-radius: 8px;
+
+  button,
+  [class^='tagList-'] [class^='tagListInner-'] {
+    gap: 6px;
+    [class*='tag-'] {
+      border-radius: 8px;
+    }
+  }
+}
