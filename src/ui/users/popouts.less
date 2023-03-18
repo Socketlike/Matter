@@ -3,11 +3,14 @@
  */
 
 /* --- LESS classes for extending --- */
+
+/* Spacing between each sections */
 ._matterProfileSectionSpacing {
   padding: 0;
   margin-top: 12px;
 }
 
+/* Section headers */
 ._matterProfileSectionHeaders {
   padding: 2px 0;
   background-color: var(--profile-body-divider-color);
@@ -20,18 +23,22 @@
   margin-bottom: 4px;
 }
 
+/* Popout section background */
 ._matterProfileSectionPopoutContentBackground {
   border: 8px solid transparent;
   background-color: var(--profile-body-background-hover);
   border-radius: 0 0 6px 6px;
 }
 
+/* Modal section header background */
 ._matterProfileSectionModalHeaderBackground {
   ._matterProfileSectionPopoutContentBackground();
+  background-color: var(--profile-body-divider-color);
   margin: 0;
   margin-bottom: 16px;
 }
 
+/* Modal section content background */
 ._matterProfileSectionModalContentBackground {
   border: 8px solid transparent;
   border-width: 8px 8px 0;
@@ -39,11 +46,13 @@
   margin: 0;
 }
 
+/* End corner rounding */
 ._matterProfileSectionRoundEndCorners {
   border-radius: 0 0 6px 6px;
   background-color: var(--profile-body-background-hover);
 }
 
+/* Bottom padding hack for activity section */
 ._matterProfileActivityPaddingHack {
   margin: 0;
   padding: 8px 0 0;
@@ -51,6 +60,7 @@
   border-width: 0 8px;
 }
 
+/* Add more padding to bottom of activity section when there is buttons */
 ._matterProfileActivityButtonPaddingHack {
   margin-bottom: 8px;
   margin-top: 4px;

@@ -6,3 +6,11 @@
 [class^='layerContainer-'] > [id^='popout_'] > [class^='animator'] > div {
   box-shadow: var(--elevation-high);
 }
+
+/* --- Attempt to disable Discord's laggy transitions --- */
+[class^='layer-'][class*='animating-'] {
+  transition: none;
+  pointer-events: all !important;
+  will-change: unset !important;
+  opacity: unset !important;
+}

@@ -1,0 +1,39 @@
+/**
+ * ### SETTINGS CONTENT ###
+ */
+
+[class^='layer-']:not([class*='baseLayer-'])
+  > [class^='standardSidebarView-']
+  > [class^='contentRegion-']
+  > [class^='contentTransitionWrap-']
+  > [class^='contentRegionScroller-'] {
+  justify-content: center;
+
+  > [class^='contentColumn-'] {
+    width: -webkit-fill-available;
+    padding: 0;
+    padding-top: 30px;
+
+    > h2:first-child,
+    :not([class]) > [class^='sectionTitle'] > h2[class^='h1-'] {
+      display: flex;
+      margin: 10px 0 15px 0;
+      padding: 10px;
+      justify-content: center;
+      background-color: var(--background-secondary);
+      border-radius: 8px;
+    }
+  }
+
+  > [class^='toolsContainer-'] {
+    padding-top: 0;
+    margin-right: 0;
+    position: relative;
+    left: 40px;
+    top: 40px;
+
+    > [class^='tools-'] {
+      position: unset;
+    }
+  }
+}

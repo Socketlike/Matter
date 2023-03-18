@@ -2,25 +2,36 @@
  * ### USER PANEL ###
  */
 
+/* --- LESS classes for extending --- */
+
+/* User panel profile button */
+._matterUserPanelProfileButton {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 4px;
+  margin: 8px;
+  height: 50px;
+  background-color: var(--background-primary);
+  border-radius: 8px;
+}
+
+/* Other buttons */
+._matterUserPanelOtherButtons {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* --- Panel --- */
 section[class^='panels-'] [class^='container-'] {
-  /* --- Make panel not a row --- */
   flex-direction: column;
   height: 100%;
+  background-color: hsl(var(--primary-700-hsl) / 0.45);
 
-  /* --- Color --- */
-  background-color: hsl(var(--primary-700-hsl) / 0.5);
-
-  /* --- Profile button --- */
+  /* Profile button */
   > [class^='avatarWrapper-'] {
-    max-width: 100%;
-    width: 100%;
-    padding-left: 4px;
-    margin: 8px;
-    height: 50px;
-    background-color: var(--background-primary);
-    border-radius: 8px;
+    &:extend(._matterUserPanelProfileButton);
 
-    /* --- Avatar image --- */
+    /* Avatar image */
     > [class*='avatar-'] {
       margin-left: 4px;
 
@@ -29,24 +40,23 @@ section[class^='panels-'] [class^='container-'] {
       }
     }
 
-    /* --- Enlarge user name --- */
+    /* Username */
     > [class^='nameTag-'] [class*='usernameContainer-'] {
       font-size: 16px;
     }
   }
 
-  /* --- Buttons container --- */
+  /* Buttons container */
   > [class^='flex-'] {
-    width: 100%;
-    margin-bottom: 8px;
+    &:extend(._matterUserPanelOtherButtons);
 
-    /* --- Individual buttons --- */
-    button {
+    /* Individual buttons */
+    > button {
       flex-grow: 1;
       margin: 0 4px;
       background-color: var(--background-primary);
 
-      /* --- Round the corner of the first and the last buttons (plugins compat) --- */
+      /* Round the corner of the first and the last buttons (future proof) */
       &:first-child {
         border-radius: 6px 0 0 6px;
         margin-right: 4px;

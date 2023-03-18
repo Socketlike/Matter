@@ -2,17 +2,7 @@
  * ### SERVER LIST ITEMS ###
  */
 
-/* --- LESS classes for extending --- */
-._matterRecolorAcronymServers {
-  color: var(--background-tertiary);
-  background-color: var(--brand-experiment);
-}
-
-._matterRecolorButtons {
-  color: var(--background-tertiary);
-}
-
-/* --- Coloring servers with no image --- */
+/* --- Coloring server entries with no image --- */
 foreignObject {
   [class^='wrapper-'] {
     /* Selecting server list items only */
@@ -20,7 +10,8 @@ foreignObject {
       /* Apply to selected & hovered buttons */
       &[class*='selected-'] > [class*='acronym-'],
       > [class*='acronym-']:hover {
-        &:extend(._matterRecolorAcronymServers);
+        color: var(--background-tertiary);
+        background-color: var(--brand-experiment);
       }
     }
   }
@@ -39,7 +30,7 @@ foreignObject {
       &[class*='selected-'],
       &:hover {
         div svg {
-          &:extend(._matterRecolorButtons);
+          color: var(--background-tertiary);
         }
       }
     }
@@ -50,7 +41,7 @@ foreignObject {
   &[class*='selected-'],
   &:hover {
     foreignObject div div {
-      &:extend(._matterRecolorButtons);
+      color: var(--background-tertiary);
     }
   }
 }
