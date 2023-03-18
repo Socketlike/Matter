@@ -1,6 +1,6 @@
 {
   "name": "Matter",
-  "version": "0.1.0",
+  "version": "v0.1.2",
   "description": "The {insert your feelings here} theme ever for Replugged",
   "engines": {
     "node": ">=14.0.0"
