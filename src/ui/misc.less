@@ -14,3 +14,8 @@
   will-change: unset !important;
   opacity: unset !important;
 }
+
+/* --- Remove "I'm new to Discord, say hi!" --- */
+[class^='section-'][class*='lastSection-'] > [class^='wumpusWrapper-'] {
+  display: none;
+}
