@@ -27,7 +27,6 @@
 ._matterProfileSectionPopoutContentBackground {
   border: 8px solid transparent;
   background-color: var(--profile-body-background-hover);
-  border-radius: 0 0 6px 6px;
 }
 
 /* Modal section header background */
@@ -36,6 +35,7 @@
   background-color: var(--profile-body-divider-color);
   margin: 0;
   margin-bottom: 16px;
+  border-radius: 0 0 6px 6px;
 }
 
 /* Modal section content background */
@@ -92,6 +92,8 @@
           &:extend(._matterProfileSectionPopoutContentBackground);
 
           border-bottom: 0px;
+          margin-top: 0px;
+          padding-top: 4px;
         }
 
         /* Select the buttons container */
@@ -102,12 +104,20 @@
           /* Padding hack */
           > :last-child {
             &:extend(._matterProfileActivityButtonPaddingHack);
+
+            &[class^='iconButtonSize-'] {
+              margin-top: 0;
+            }
           }
         }
 
         /* Headers */
         > [class*='headerContainer-'] {
           margin-bottom: 0;
+
+          + div:not([class^='flex-']) {
+            padding-top: 0 !important;
+          }
 
           h2,
           h3 {

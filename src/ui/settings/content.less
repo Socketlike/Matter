@@ -2,6 +2,7 @@
  * ### SETTINGS CONTENT ###
  */
 
+/* Target all other layers, with a sidebar */
 [class^='layer-']:not([class*='baseLayer-'])
   > [class^='standardSidebarView-']
   > [class^='contentRegion-']
@@ -9,11 +10,13 @@
   > [class^='contentRegionScroller-'] {
   justify-content: center;
 
+  /* Target the main content */
   > [class^='contentColumn-'] {
     width: -webkit-fill-available;
     padding: 0;
     padding-top: 30px;
 
+    /* Header */
     > h2:first-child,
     > div > [class^='sectionTitle'] > h2[class^='h1-'],
     > div:first-child > h2[class^='heading-lg-semibold-'],
@@ -26,6 +29,7 @@
       border-radius: 8px;
     }
 
+    /* Target Replugged setting tabs specifically */
     &[id^='rp-'][id$='-tab'] {
       padding-top: 20px;
 
@@ -39,8 +43,23 @@
         }
       }
     }
+
+    /* Avatar fix for account tab */
+    &#my-account-tab [class^='accountProfileCard-'] {
+      > [class^='bannerSVGWrapper-'] > mask > circle {
+        r: 0;
+      }
+
+      > [class^='userInfo-'] > [class^='wrapper-'] {
+        outline: 4px solid var(--background-tertiary);
+        > svg > rect {
+          z-index: 1000;
+        }
+      }
+    }
   }
 
+  /* Target the close button */
   > [class^='toolsContainer-'] {
     padding-top: 0;
     margin-right: 0;
