@@ -3,8 +3,11 @@
  */
 
 [class^='appMount-'] > svg:first-child {
-  mask[id^='svg-mask-avatar-status-round-'] > circle[fill='white'] {
-    r: 1;
+  mask[id^='svg-mask-avatar-status-round-'],
+  mask[id^='svg-mask-avatar-status-mobile-'] {
+    > circle[fill='white'] {
+      r: 1;
+    }
   }
 }
 
@@ -15,6 +18,7 @@ div[class*='avatar-'] {
   > svg {
     > foreignObject {
       border-radius: 20%;
+      background-color: var(--profile-body-background-color);
     }
   }
 }
@@ -31,6 +35,7 @@ div[class*='avatar-'] {
       > svg {
         > foreignObject {
           border-radius: 20%;
+          background-color: var(--profile-body-background-color);
         }
 
         > rect {
