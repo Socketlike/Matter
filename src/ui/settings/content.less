@@ -27,6 +27,7 @@
       justify-content: center;
       background-color: var(--background-secondary);
       border-radius: 8px;
+      width: 100%;
     }
 
     /* Target Replugged setting tabs specifically */
@@ -35,11 +36,37 @@
 
       > div:first-child {
         width: 100%;
+        flex-direction: column;
 
         + [class^='divider-'] {
-          margin-top: 10px;
-          margin-bottom: 0;
+          margin-top: 10px !important;
+          margin-bottom: 0 !important;
           border-color: transparent;
+        }
+
+        > div {
+          align-self: flex-end;
+        }
+      }
+
+      > .replugged-updater-header {
+        background-color: var(--background-tertiary);
+        border: 15px solid $background-color;
+        margin: 0;
+        border-radius: 8px;
+      }
+
+      &:has(.replugged-updater-items) > .replugged-updater-header {
+        border-radius: 8px 8px 0 0;
+      }
+      
+      > .replugged-updater-items {
+        > :not(:last-child) {
+          border-radius: 0;
+        }
+
+        > :last-child {
+          border-radius: 0 0 8px 8px;
         }
       }
     }
