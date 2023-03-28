@@ -1,9 +1,9 @@
 {
   "name": "Matter",
-  "version": "v0.1.5",
+  "version": "0.1.5",
   "description": "The {insert your feelings here} theme ever for Replugged",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "build:dev": "node scripts/build.js",

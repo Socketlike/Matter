@@ -7,7 +7,7 @@
     "discordID": "1065607800392261732",
     "github": "Socketlike"
   },
-  "version": "v0.1.5",
+  "version": "0.1.5",
   "updater": {
     "type": "github",
     "id": "Socketlike/Matter"
