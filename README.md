@@ -1,7 +1,7 @@
 <h1 align="center">Matter</h1>
 <h4 align="center">The {insert your feelings here} theme ever for Replugged</h4>
 
-## Preview
+## Preview (OUTDATED)
 
 Hue scheme used in the screenshots: `--matter-brand-hue: 0`
 
@@ -17,7 +17,7 @@ Hue scheme used in the screenshots: `--matter-brand-hue: 0`
 
 ![DM Menu](preview/3.png)
 
-## Customization
+## Customization (OUTDATED)
 
 There is almost literally no customizations except for the hue of the color scheme (define your own hue for the color scheme by overriding
 `--matter-brand-hue`)

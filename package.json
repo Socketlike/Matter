@@ -19,10 +19,6 @@
   "type": "module",
   "devDependencies": {
     "@electron/asar": "^3.2.3",
-    "@parcel/config-default": "^2.8.3",
-    "@parcel/core": "^2.8.3",
-    "@parcel/transformer-sass": "^2.8.3",
-    "@types/node": "^18.15.3",
     "esbuild": "^0.17.11",
     "esbuild-plugin-less": "^1.1.13",
     "prettier": "^2.8.4",
