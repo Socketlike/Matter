@@ -18,10 +18,10 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@electron/asar": "^3.2.3",
-    "esbuild": "^0.17.11",
-    "esbuild-plugin-less": "^1.1.13",
-    "prettier": "^2.8.4",
-    "replugged": "^4.2.1"
+    "@electron/asar": "^3.2.4",
+    "esbuild": "^0.17.19",
+    "esbuild-plugin-less": "^1.2.1",
+    "prettier": "^2.8.8",
+    "replugged": "^4.5.1"
   }
 }
