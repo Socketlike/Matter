@@ -1,0 +1,47 @@
+/**
+ * ### SERVER LIST ITEMS ###
+ */
+
+/* --- Coloring server entries with no image --- */
+foreignObject {
+  [class^='wrapper-'] {
+    /* Selecting server list items only */
+    &[data-list-item-id^='guildsnav'] {
+      /* Apply to selected & hovered buttons */
+      &[class*='selected-'] > [class*='acronym-'],
+      > [class*='acronym-']:hover {
+        color: var(--background-tertiary);
+        background-color: var(--brand-experiment);
+      }
+    }
+  }
+}
+
+/* --- Make the unread pill less of a circular blob --- */
+[class^='listItem-'] [class^='pill-'] span {
+  border-radius: 0 2px 2px 0;
+}
+
+/* --- Recolor buttons in server list --- */
+[class^='tutorialContainer-'] {
+  [class^='listItem-'] [class^='listItemWrapper-'] [class^='wrapper-'] svg foreignObject {
+    [class^='wrapper-'] {
+      /* Apply to selected & hovered buttons */
+      &[class*='selected-'],
+      &:hover {
+        div svg {
+          color: var(--background-tertiary);
+        }
+      }
+    }
+  }
+}
+[data-list-id='guildsnav'] [class^='listItem-'] :not([class]) [class^='wrapper'] {
+  /* Apply to selected & hovered buttons */
+  &[class*='selected-'],
+  &:hover {
+    foreignObject div div {
+      color: var(--background-tertiary);
+    }
+  }
+}

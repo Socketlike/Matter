@@ -1,0 +1,75 @@
+/**
+ * ### AVATARS ###
+ */
+
+[class^='appMount-'] > svg:first-child {
+  mask[id^='svg-mask-avatar-status-round-'],
+  mask[id^='svg-mask-avatar-status-mobile-'] {
+    > circle[fill='white'] {
+      r: 1;
+    }
+  }
+}
+
+div[class*='avatar-'] {
+  border-radius: 20%;
+  outline: 6px solid var(--profile-body-background-color);
+
+  > svg {
+    > foreignObject {
+      border-radius: 20%;
+      background-color: var(--profile-body-background-color);
+    }
+  }
+}
+
+[class*='avatarWrapper-'] {
+  border-radius: 20%;
+
+  > [class^='avatarHoverTarget-'] {
+    border-radius: 20%;
+
+    > [class^='wrapper-'] {
+      border-radius: 20%;
+
+      > svg {
+        > foreignObject {
+          border-radius: 20%;
+          background-color: var(--profile-body-background-color);
+        }
+
+        > rect {
+          z-index: 1000;
+        }
+      }
+    }
+
+    + [class^='avatarHint-'] > foreignObject {
+      border-radius: 20%;
+    }
+  }
+}
+
+[class^='bannerSVGWrapper-'] {
+  > mask > circle {
+    r: 0;
+  }
+
+  + [class*='avatarWrapper-'] {
+    outline: 4px solid var(--profile-body-background-color);
+  }
+}
+
+[class^='wrapper-'] {
+  border-radius: 20%;
+
+  > svg {
+    > mask > circle {
+      r: 100;
+    }
+
+    > foreignObject {
+      border-radius: 20%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/**
+ * ### SETTINGS SIDEBAR ###
+ */
+
+/* --- Make settings sidebar look much better --- */
+[class^='layer-']:not([class*='baseLayer-']) > [class^='standardSidebarView-'] > [class^='sidebarRegion-'] > [class^='sidebarRegionScroller-'] {
+  justify-content: center;
+
+  /* Hide scrollbar */
+  --scrollbar-thin-thumb: 0;
+  --scrollbar-thin-track: 0;
+
+  /* The actual sidebar with contents */
+  > [class^='sidebar-'] {
+    width: 330px;
+    margin: 30px;
+    margin-right: 22px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--background-tertiary);
+
+    /* Sidebar */
+    > [class^='side-'] {
+      /* Remove Nitro icon */
+      > [class^='premiumTab-'] > [class^='premiumLabel-'] > svg {
+        display: none;
+      }
+
+      /* Headers */
+      > [class^='header-'] {
+        margin-bottom: 6px;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        background-color: var(--background-modifier-hover);
+        border-radius: 6px;
+      }
+
+      /* Hide seperators */
+      > [class^='separator-'] {
+        background-color: unset;
+      }
+
+      /* Add padding to end of button list */
+      > [class^='socialLinks-'] {
+        margin-top: 10px;
+      }
+    }
+  }
+}
